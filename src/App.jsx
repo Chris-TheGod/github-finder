@@ -6,6 +6,7 @@ import { About } from "./pages/About";
 import { NotFound } from "./pages/NotFound";
 import { GithubProvider } from "./context/github/GithubContext";
 import { AlertProvider } from "./context/alert/AlertContext";
+import { Alert } from "./components/layout/Alert";
 
 // src/App.jsx
 export default function App() {
@@ -17,6 +18,7 @@ export default function App() {
             <Navbar />
 
             <main className="container mx-auto px-3 pb-12">
+              <Alert />
               <Routes>
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<About />} />
